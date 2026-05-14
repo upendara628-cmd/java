@@ -1,4 +1,3 @@
-package conditions;
 import java.util.*;
 
 public class even_odd {
@@ -6,16 +5,8 @@ public class even_odd {
         System.out.print("enter your number :");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if(n%2==0){
-            System.out.print("your number is even");
-        }
-            else if(n<0){
-                System.out.print("enter valid number");
-        }
-            else{
-                System.out.print("your number is odd ");
-            }
-
+        String result = (n%2 == 0) ? "even " : "odd ";
+        System.out.print(result);
     }
     
 }
